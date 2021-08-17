@@ -77,6 +77,10 @@
             },
             "development": {
               "browserTarget": "angular-serach-books:build:development"
+            },
+            "options": {
+              "browserTarget": "angular-serach-books:build",
+              "proxyConfig": "src/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"

@@ -1,0 +1,7 @@
+{
+    "/api/*": {
+        "target": "https://developers.google.com/books/docs/v1/using",
+        "secure": false,
+        "logLevel": "debug"
+    }
+}

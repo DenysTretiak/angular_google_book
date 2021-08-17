@@ -1,0 +1,16 @@
+<div class="container">
+    <form>
+        <input
+            id="login"
+            #searchInput
+            class="search"
+            type="text"
+            placeholder="Type keyword"
+        >
+    </form>
+    <ul class ="list">
+        <li *ngFor="let book of books">
+            {{ book.title }}
+        </li>
+    </ul>
+</div>
