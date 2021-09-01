@@ -1,5 +1,6 @@
 .container {
   margin: 20px auto;
+  width: 80%;
   //display: flex;
   //justify-content: center;
 
@@ -13,7 +14,22 @@
     margin-top: 20px;
   }
 
-  .li {
-    list-style: none;
+  .list {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    li {
+      list-style: none;
+      flex-basis: 22%;
+
+      .book-details {
+        margin-top: 10px;
+        text-align: center;
+      }
+    }
   }
+
+
 }

@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { SearchPageComponent } from './search-page.component';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { HttpService } from '../shared/services/http.service';
 import { HttpClientJsonpModule, HttpClientModule } from '@angular/common/http';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
     declarations: [
@@ -13,7 +14,8 @@ import { HttpClientJsonpModule, HttpClientModule } from '@angular/common/http';
         BrowserModule,
         FormsModule,
         HttpClientModule,
-        HttpClientJsonpModule
+        HttpClientJsonpModule,
+        MatCardModule,
     ],
     providers: [HttpService],
     exports: [SearchPageComponent]

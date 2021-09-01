@@ -1,16 +1,20 @@
 <div class="container">
     <form>
-        <input
-            id="login"
-            #searchInput
-            class="search"
-            type="text"
-            placeholder="Type keyword"
-        >
+            <input
+                id="login"
+                #searchInput
+                class="search"
+                type="text"
+                placeholder="Type keyword"
+            >
     </form>
-    <ul class ="list">
-        <li *ngFor="let book of books">
-            {{ book.title }}
+    <ul class = "list">
+        <li *ngFor="let book of books | async">
+            <mat-card class="book-details">
+                <img [src]="book.imageLinks.thumbnail" width="128" height="192" alt="book image">
+                <h2 class="title"> {{ book.title }} </h2>
+                <h3 *ngIf="book.authors" class="author"> {{book.authors[0]}}</h3>
+            </mat-card>
         </li>
     </ul>
 </div>
